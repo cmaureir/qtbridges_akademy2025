@@ -486,18 +486,18 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img style="width: 90%;" src="img/kirigami_python.png"/>
+  <img style="width: 70%;" src="img/kirigami_python.png"/>
   <p style="font-size: 80%;">Source: <a href="https://develop.kde.org/docs/getting-started/python/">develop.kde.org/docs/getting-started/python/</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img style="width: 90%;" src="img/kirigami_rust.png"/>
+  <img style="width: 70%;" src="img/kirigami_rust.png"/>
   <p style="font-size: 80%;">Source: <a href="https://develop.kde.org/docs/getting-started/rust/">develop.kde.org/docs/getting-started/rust/</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
   <h2>Session at the end of the day</h2>
-  <img style="width: 90%;" src="img/session_kde_bindings.png"/>
+  <img style="width: 50%;" src="img/session_kde_bindings.png"/>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -508,7 +508,7 @@
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
   <h3>Python's case (from before)</h3>
     <div id="left">
-      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 20%;"><code class="c++" data-trim data-noescape>
         #ifndef MAINWINDOW_H
         #define MAINWINDOW_H
 
@@ -527,7 +527,7 @@
         };
 
         #endif // MAINWINDOW_H</code></pre>
-      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 20%;"><code class="c++" data-trim data-noescape>
         #include "mainwindow.h"
 
         MainWindow::MainWindow(QWidget *parent)
@@ -542,7 +542,7 @@
         {
             m_button-&gt;setText("Ready");
         }</code></pre>
-      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+      <pre style="font-size: 20%;"><code class="c++" data-trim data-noescape>
         #include &lt;QApplication&gt;
         #include "mainwindow.h"
 
@@ -635,6 +635,25 @@
 
 <section data-transition="fade-in fade-out">
   <img style="width: 100%;" src="img/qtbridges_back.png"/>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2>The development team</h2>
+  <ul>
+    <li>Ahmed El Khazari</li>
+    <li>Juha Vuolle</li>
+    <li>Karsten Lamm-Heimrich</li>
+    <li>Lena Biliaieva</li>
+    <li>Magdalena Stojek</li>
+    <li>Matthias Rauter</li>
+    <li>Miguel Costa</li>
+    <li>Piotr Wiercinski</li>
+    <li>Shyamnath Premnadh</li>
+    <li>Yuri Knigavko</li>
+    <li>Vladimir Minenko (PM)</li>
+    <li>Cristián Maureira-Fredes (TL)</li>
+    <li>+ More</li>
+  </ul>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
@@ -875,7 +894,7 @@ class Program
   <h3>Qt Bridges (C#) - Minimal application</h3>
   <div id="left">
     <pre style="font-size: 20%;"><code class="c#" data-trim data-noescape>
-// Backend
+// Backend.cs
 using Qt.Quick;
 
 namespace Qt.DotNet.QmlNext.MinimalApp
@@ -919,20 +938,20 @@ namespace Qt.DotNet.QmlNext.MinimalApp
   </div>
   <div id="right">
     <pre style="font-size: 30%;"><code class="c#" data-trim data-noescape>
-    // Main
-    using Qt.Quick;
+// Main.cs
+using Qt.Quick;
 
-    namespace Qt.DotNet.QmlNext.MinimalApp
+namespace Qt.DotNet.QmlNext.MinimalApp
+{
+    public class Program
     {
-        public class Program
+        public static void Main(string[] args)
         {
-            public static void Main(string[] args)
-            {
-                Qml.LoadFromModule("Main");
-                Qml.WaitForExit();
-            }
+            Qml.LoadFromModule("Main");
+            Qml.WaitForExit();
         }
     }
+}
     </code></pre>
   </div>
 </section>
@@ -994,6 +1013,7 @@ main()
 <h3>Qt Bridges (Swift) - Minimal application</h3>
 <div id="left">
   <pre style="font-size: 28%;"><code class="swift" data-trim data-noescape>
+// main.swift (1/2)
 @QtBridgeable
 public class ListModel {
   @Published var list: [String] = ["test string"]
@@ -1027,6 +1047,7 @@ public class ListModel {
 </div>
 <div id="left">
   <pre style="font-size: 30%;"><code class="swift" data-trim data-noescape>
+// main.swift (2/2)
 var app = QApp()
 
 var model = ListModel()
@@ -1096,6 +1117,7 @@ public class Program {
 <h3>Qt Bridges (Java) - Minimal application</h3>
 <div id="left">
   <pre style="font-size: 27%;"><code class="java" data-trim data-noescape>
+// Backend.java
 package org.qt.bridge;
 
 import org.qt.bridge.core.QtObject;
@@ -1153,6 +1175,18 @@ public class ViewModel extends QtObject {
 </div>
 <div id="right">
   <pre style="font-size: 25%;"><code class="java" data-trim data-noescape>
+// QCallback
+package org.qt.bridge;
+
+public interface QCallback {
+    void duplicateFound(String item);
+    void erased();
+    void blankFound();
+
+}
+  </code></pre>
+  <pre style="font-size: 25%;"><code class="java" data-trim data-noescape>
+// Main.java
 package org.qt.bridge;
 
 import org.qt.bridge.app.QtQuickApplication;
@@ -1174,7 +1208,7 @@ public class Main {
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Interoperability with Kotlin</h2>
+  <h2>Interoperability with Kotlin <i class="qt-neon">for free*</i></h2>
 </section>
 
 <!-- Python -->
@@ -1225,6 +1259,7 @@ if __name__ == "__main__":
 <h3>Qt Bridges (Python) - Minimal application</h3>
 <div id="left">
   <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+// main.py (1/2)
 import sys
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
@@ -1268,6 +1303,7 @@ class StringModel:
 </div>
 <div id="right">
   <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+// main.py (2/2)
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
@@ -1329,7 +1365,7 @@ fn main() {
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
 <h2>Why Rust? (2/2)</h2>
 <ul>
-  <li>Previoys experience (qtmetaobject-rs, CXX-Qt, etc)</li>
+  <li>Previous experience (qtmetaobject-rs, CXX-Qt, etc)</li>
   <li>Language popularity</li>
   <li>Ecosystem</li>
   <li>Tooling</li>
@@ -1340,6 +1376,7 @@ fn main() {
 <h3>Qt Bridges (Rust) - Minimal application</h3>
 <div id="left">
   <pre style="font-size: 30%;width: 100%;"><code class="rust" data-trim data-noescape>
+// backend.rs
 use qt_gen::qobject_impl;
 use qt_type_lib::{QVariant, QStringList,
                   QModelIndex, QSignalBlocker};
@@ -1397,6 +1434,7 @@ impl Backend {
 </div>
 <div id="right">
   <pre style="font-size: 22%;"><code class="rust" data-trim data-noescape>
+// main.rs
 use bridge::QObjectHolder;
 use qt_type_lib::{QGuiApplication, QQmlApplicationEngine, QVariantMap};
 
@@ -1427,9 +1465,18 @@ fn main() {
           data-background-video-loop data-background-video-muted>
 </section>
 
+<section class="slide-gray" data-transition="fade-in fade-out">
+  <h2>Note</h2>
+  <p class="quote-green fragment">
+    The previous snippets are only for <i class="qt-neon">one specific example</i>.
+    More examples are being worked on, and the API will <i class="red">probably change</i>.
+  </p>
+</section>
+
 <!-- other langs -->
 <section data-transition="fade-in fade-out">
   <h2 class="r-fit-text">Brief FAQ</h2>
+  <p style="font-size: 80%;"><i class="qt-lemon">(based on common questions)</i></p>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -1492,7 +1539,7 @@ fn main() {
 <section data-transition="fade-in fade-out">
   <h2 class="r-fit-text">Can I combine <i class="qt-lemon">all the languages</i>?🧪</h2>
   <p class="quote-green fragment">
-  Not for TP, but backend interchangable
+  Not for TP, but backend interchangeable
   </p>
 </section>
 
@@ -1503,11 +1550,21 @@ fn main() {
   </p>
 </section>
 
-<!-- end -->
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Will this be <i class="qt-lemon">Open Source</i>?👐</h2>
+  <p class="quote-green fragment">
+    <i class="qt-neon">Of course</i>, the main goal is to expand our community.
+  </p>
+</section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Release a TP this year*</h2>
+  <h2 class="r-fit-text">When will this be <i class="qt-lemon">released</i>?🚀</h2>
+  <p class="quote-green fragment">
+    Our initial plan is to release by the end of the year (TP)
+  </p>
 </section>
+
+<!-- end -->
 
 <section data-transition="fade-in fade-out">
   <h2 class="r-fit-text">To summarize...</h2>
@@ -1590,14 +1647,14 @@ fn main() {
   <div id="hidden" style="display:none;">
     <div id="header">
       <div id="header-left" style="margin-top: 10px; margin-left: 20px;">
-          <img style="width: 150px;margin:0;margin-top:30px;margin-left:30px;padding:0;" src="img/akademy_logo.svg" />
+          <img style="width: 100px;margin:0;margin-top:30px;margin-left:30px;padding:0;" src="img/akademy_logo.svg" />
       </div>
       <div id="header-right"></div>
       <div id="footer-left">
         <p style="font-size: 14pt;margin-left: 20px;">
           <!--<img class="clean-img" src="img/qt_white.png" />-->
           <b>Akademy, Berlin 2025</b>
-          | Cristián <b><i class="qt-lemon">@cmaureir</i></b>
+          | <i class="qt-neon">The Qt Company</i> | Cristián <b><i class="qt-lemon">@cmaureir</i></b>
       </div>
   </div>
 
