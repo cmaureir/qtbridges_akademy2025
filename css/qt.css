@@ -10,11 +10,15 @@
   --qt-mandarin: #FFA615;
   --qt-burgundy: #5F002D;
   --python-blue: #1e405d;
+  --python-yellow: #fece3e;
   /*--rust-red: #ef4a00;*/
   --rust-red: #a72145;
   --zig-yellow: #ef9f1c;
   --zig-black: #111111;
   --carbon-gray: #353535;
+  --swift-orange: #ff9b54;
+  --swift-orange-dark: #f05035;
+  --csharp-purple: #b0a0e5;
 }
 
 #header-left {
@@ -112,6 +116,11 @@
 /* styles */
 .gray {
   color: #646464;
+  font-style: normal;
+}
+
+.yellow {
+  color: var(--python-yellow);
   font-style: normal;
 }
 
@@ -230,6 +239,19 @@ ul>li {
   background-color: var(--python-blue);
   color: var(--white) !important;
 }
+
+.slide-orange {
+  background: var(--swift-orange) !important;
+  background-color: var(--swift-orange);
+  color: var(--white) !important;
+}
+
+.slide-purple {
+  background: var(--csharp-purple) !important;
+  background-color: var(--csharp-purple);
+  color: var(--white) !important;
+}
+
 
 .slide-red {
   background: var(--rust-red) !important;

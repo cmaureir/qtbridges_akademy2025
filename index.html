@@ -30,34 +30,20 @@
   <div class="reveal">
     <div class="slides">
 
-<section>
+<section data-transition="fade-in fade-out" data-background-image="img/qtstars_back.png">
   <div id="left70">
     <h3>The Role of new Languages <span style="font-weight: normal;">in the Future of the Qt Ecosystem.</span></h3>
     <hr class="qt-line"/>
   <p class="x80">
     Dr. <i class="qt-lemon">Cristián</i> Maureira-Fredes<br>
+    <span class="qt-lemon">maureira.dev</span><br/>
     <span class="qt-neon">@cmaureir</span><br/>
     <img class="clean-img" src="img/bluesky.png">
     <img class="clean-img" src="img/mastodon.png">
     <img class="clean-img" src="img/github_white.png">
     <img class="clean-img" src="img/linkedin.png">
-    <img class="clean-img" src="img/twitter.png">
   </p>
   </div>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h2>Disclaimer</h2>
-  This talk has lots of opinions and points of view
-  that belong to me, not to my employer nor my affiliations.
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">Motivation</h2>
-</section>
-
-<section data-transition="fade-in fade-out">
-  Let's start with a <i class="qt-neon">simple</i> question.
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -66,57 +52,62 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/tiobe_2023-10.png" />
-  <p style="font-size: 50%;">Source <a href="https://www.tiobe.com/tiobe-index/">TIOBE index October 2023</a></p>
+  <img src="img/tiobe_2025-08.png" />
+  <p style="font-size: 50%;">Source <a href="https://www.tiobe.com/tiobe-index/">TIOBE index August 2025</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/so_languages_all2023.png" />
-  <p style="font-size: 50%;">Most Popular technologies - Source <a href="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-programming-scripting-and-markup-languages">StackOverflow Survey 2023</a></p>
+  <img src="img/so2025_professionals.png" />
+  <p style="font-size: 50%;">Most Popular technologies (Professionals) - Source <a href="https://survey.stackoverflow.co/2025/technology#most-popular-technologies-language-write-ins">StackOverflow Survey 2025</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/so_languages2023.png" />
-  <p style="font-size: 50%;">Admired and Desired Programming languages - Source <a href="https://survey.stackoverflow.co/2023/#section-admired-and-desired-programming-scripting-and-markup-languages">StackOverflow Survey 2023</a></p>
+  <img src="img/so2025_learning.png" />
+  <p style="font-size: 50%;">Most Popular technologies (Learning) - Source <a href="https://survey.stackoverflow.co/2025/technology#most-popular-technologies-language-write-ins">StackOverflow Survey 2025</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">What about</h2>
-  <h2 class="r-fit-text"><i class="qt-neon">UI</i> frameworks?</h2>
+  <img src="img/so2025_all.png" />
+  <p style="font-size: 50%;">Most Popular technologies (All) - Source <a href="https://survey.stackoverflow.co/2025/technology#most-popular-technologies-language-write-ins">StackOverflow Survey 2025</a></p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/so_frameworks_all2023.png" />
-  <p style="font-size: 50%;">Most popular Frameworks - Source <a href="https://survey.stackoverflow.co/2023/#section-admired-and-desired-other-frameworks-and-libraries">StackOverflow Survey 2023</a></p>
+  <img style="width: 90%;" src="img/hammer.png" />
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/so_frameworks2023.png" />
-  <p style="font-size: 50%;">Admired and Desired Frameworks - Source <a href="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-other-frameworks-and-libraries">StackOverflow Survey 2023</a></p>
+  <img style="width: 90%;" src="img/toolbox.png" />
 </section>
 
 <section data-transition="fade-in fade-out">
-  <img src="img/tauri_intro.png" />
-  <p style="font-size: 50%;">Source <a href="https://tauri.app/about/intro">Tauri Intro</a></p>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">The current language state</h2>
-  <h2 class="r-fit-text">of the <i class="qt-neon">Qt</i> Project</h2>
+  <h2 class="r-fit-text">Languages in the</h2>
+  <h2 class="r-fit-text"><i class="qt-neon">Qt Project</i></h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-auto-animate>
-  <h2>Languages in Qt</h2>
-  <div class="r-hstack justify-center">
-    <div class="fragment">1996<br><img style="width: 50%;"src="img/cpp_logo.svg"/></div>
-    <div class="fragment">2010<br><img style="width: 60%;"src="img/qml_logo.png"/></div>
-    <div class="fragment">2011 (2018)*<br><img style="width: 50%;"src="img/python.svg"/></div>
-  </div>
+    <div class="container">
+        <div style="display: inline-block;float: left;width:24%;">
+            <h3><i class="qt-neon">1995</i></h3>
+            <img style="width: 50%;"src="img/logo_cpp.svg"/>
+        </div>
+        <div class="fragment" data-fragment-index="2" style="display: inline-block;width:24%;">
+            <h3><i class="qt-neon">2011*</i></h3>
+            <img style="width: 50%;"src="img/python.svg"/>
+        </div>
+        <div class="fragment" data-fragment-index="1" style="float: left; width: 24%;">
+            <h3><i class="qt-neon">2010</i></h3>
+            <img style="width: 60%;"src="img/qml_logo.png"/>
+        </div>
+        <div class="fragment" data-fragment-index="3" style="float: right; width: 24%;">
+            <h3><i class="qt-neon">2025</i></h3>
+            <img style="width: 50%;"src="img/questionmark.svg"/>
+        </div>
+    </div>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">What about <i class="qt-neon">other</i></h2>
-  <h2 class="r-fit-text">languages?</h2>
+  <h2 class="r-fit-text">The approach <i class="qt-lemon">so far:</i></h2>
+  <h2 class="r-fit-text fragment">Bindings</h2>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -135,7 +126,7 @@
       <tr>
         <td><a href="https://pyside.org">PySide</a></td>
         <td>Python</td>
-        <td>6.6.0</td>
+        <td>6.9.2</td>
         <td>-</td>
         <td>LGPLv3/Commercial</td>
         <td>The Qt Company</td>
@@ -143,7 +134,7 @@
       <tr>
         <td><a href="https://riverbankcomputing.com/software/pyqt/">PyQt</a></td>
         <td>Python</td>
-        <td>6.6.0</td>
+        <td>6.9.1</td>
         <td>-</td>
         <td>GPLv3/Commercial</td>
         <td>Riverbank Computing</td>
@@ -160,63 +151,55 @@
         <td><a href="https://github.com/woboq/qmetaobject-rs/">qmetaobject-rs</a></td>
         <td>Rust</td>
         <td>6.5.0</td>
-        <td>2023.11.03</td>
+        <td>2025.01.18</td>
         <td>MIT</td>
         <td>Woboq</td>
       </tr>
       <tr>
         <td><a href="https://github.com/OmixVisualization/qtjambi">QtJambi</a></td>
         <td>Java/Kotlin</td>
-        <td>6.6.0</td>
-        <td>2023.10.17</td>
-        <td>LGPLv2</td>
+        <td>6.9.2</td>
+        <td>2025.08.27</td>
+        <td>GPLv3/LGPLv2</td>
         <td>Omix Visualization</td>
       </tr>
       <tr>
         <td><a href="https://github.com/JuliaGraphics/QML.jl">QML.jl</a></td>
         <td>Julia</td>
         <td>6.5.2</td>
-        <td>2023.10.16</td>
+        <td>2023.08.20</td>
         <td>MIT</td>
         <td>JuliaGraphs</td>
       </tr>
       <tr>
-        <td><a href="https://ring-lang.github.io/doc1.17/qt.html">RingQt</a></td>
-        <td>Ring</td>
-        <td>5.15.15</td>
-        <td>2023.09.27</td>
-        <td>MIT</td>
-        <td>-</td>
-      </tr>
-      <tr>
         <td><a href="https://docs.nodegui.org/">NodeGui</a></td>
         <td>Node.js</td>
-        <td>6.4.1</td>
-        <td>2023.08.28</td>
+        <td>6.6.0</td>
+        <td>2025.06.30</td>
         <td>MIT</td>
         <td>NodeGui</td>
       </tr>
       <tr>
         <td><a href="https://github.com/jerous86/nimqt">nimqt</a></td>
         <td>Nim</td>
-        <td>6.4.3</td>
-        <td>2023.08.22</td>
+        <td>6.4.2</td>
+        <td>2024.11.5</td>
         <td>GPL2</td>
         <td>-</td>
       </tr>
       <tr>
         <td><a href="https://github.com/kassane/qml_zig">QML-zig</a></td>
         <td>Zig</td>
-        <td>5.15</td>
-        <td>2023.08.17</td>
+        <td>6.4.2</td>
+        <td>2025.05.09</td>
         <td>Apache 2.0</td>
         <td>-</td>
       </tr>
     </tbody>
   </table>
-  <p style="font-size: 40%;">(updated on Nov 6th, 2023)</p>
+  <p style="font-size: 40%;">(updated on Sep 2nd, 2025)</p>
   <p style="font-size: 55%;">
-  Other 26 projects (some inactive) in <a href="https://wiki.qt.io/Language_Bindings">wiki.qt.io/Language_Bindings</a>
+  Other 24 projects (some inactive) in <a href="https://wiki.qt.io/Language_Bindings">wiki.qt.io/Language_Bindings</a>
   </p>
 </section>
 
@@ -237,7 +220,7 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>What is the <i class="qt-neon">motivation</i>?</h2>
+  <h2>What has been the <i class="qt-neon">motivation</i>?</h2>
   <ul>
     <li class="fragment">The need of GUI frameworks</li>
     <li class="fragment">C++ flexibility for bindings</li>
@@ -246,18 +229,13 @@
   </ul>
 </section>
 
-<section data-transition="fade-in fade-out">
-  <h2>How is it done? (1/2)</h2>
-  <img src="img/bindings.png"/>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h2>How is it done? (2/2)</h2>
-  <img src="img/rewrite.png"/>
-</section>
-
-<section data-transition="fade-in fade-out">
+<section data-transition="fade-in fade-out" data-auto-animate>
   <h2 class="r-fit-text">What <i class="qt-neon">other languages</i></h2>
+  <h2 class="r-fit-text">bring to the table</h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-auto-animate>
+  <h2 class="r-fit-text">What <i class="yellow">Python</i> and <i class="red">Rust</i></h2>
   <h2 class="r-fit-text">bring to the table</h2>
 </section>
 
@@ -364,11 +342,7 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
-  <h2>qtpip</h2>
-  <img style="width: 70%; background: 0; border: 0;" src="img/qtforpython_commercial_install.svg" />
-  <p style="font-size: 60%;">
-    <a href="https://www.qt.io/blog/qtpip-qtforpython-installer">qt.io/blog/qtpip-qtforpython-installer</a>
-  </p>
+  <img style="width: 90%; background: 0; border: 0;" src="img/cpp_python.png" />
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
@@ -383,42 +357,7 @@
 </section>
 
 <section class="slide-red" data-transition="fade-in fade-out">
-  <img style="width: 50%;"src="img/rust_logo.svg"/>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
-  <h3>Rust</h3>
-  <div id="left">
-    <ul style="font-size: 90%;">
-      <li class="fragment">Performance
-        <ul style="font-size: 70%;">
-          <li>Fast and memory efficient (no runtime or GC).</li>
-        </ul>
-      </li>
-      <li class="fragment">Reliability
-        <ul style="font-size: 70%;">
-          <li>Rich type system and ownership model (mem and thread safety)</li>
-        </ul>
-      </li>
-      <li class="fragment">Productivity
-        <ul style="font-size: 70%;">
-          <li>Docs, friendly compiler, package manager and build tool.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div id="right">
-    <pre style="font-size: 50%;width: 80%;"><code class="rust" data-trim data-noescape>
-    fn main() {
-      println!("Hello, world!");
-    }
-    </code></pre>
-    <pre style="font-size: 60%;width: 80%;"><code class="bash" data-trim data-noescape>
-    $ rustc main.rs
-    $ ./main
-    Hello, world!
-    </code></pre>
-  </div>
+  <img style="width: 50%;"src="img/logo_rust.svg"/>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
@@ -498,10 +437,6 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
-  <img style="width: 70%;" src="img/rustpython.png" />
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
   <h3><i class="blue">CXX-Qt</i> Rust ⇄ C++ bindings</h3>
   <div id="left">
     <pre style="font-size: 34%;width: 95%;"><code class="rust" data-trim data-noescape>
@@ -531,333 +466,1075 @@
     <p style="font-size: 40%;">Snippet from: <a href="https://github.com/KDAB/cxx-qt/tree/main/examples/qml_minimal">github.com/KDAB/cxx-qt/tree/main/examples/qml_minimal</a></p>
   </div>
   <div id="right">
-    <ul style="font-size: 70%;">
+    <ul style="font-size: 70%;margin-top: 100px;">
       <li class="fragment"><a href="https://crates.io/crates/cxx">CXX - safe FFI between Rust and C++</a></li>
       <li class="fragment">Idiomatic C++ and Rust</li>
       <li class="fragment">Macros → Bindings</li>
       <li class="fragment">Rust threads → update Qt state</li>
-      <li class="fragment">Partial support</li>
+      <li class="fragment"><i class="qt-lemon">Still in development</i></li>
+    </ul>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">This worked <i class="qt-lemon">well</i> for</h2>
+  <h2 class="r-fit-text"><i class="qt-neon">Qt developers</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">...also for <i class="blue">KDE</i> developers</h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <img style="width: 90%;" src="img/kirigami_python.png"/>
+  <p style="font-size: 80%;">Source: <a href="https://develop.kde.org/docs/getting-started/python/">develop.kde.org/docs/getting-started/python/</a></p>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <img style="width: 90%;" src="img/kirigami_rust.png"/>
+  <p style="font-size: 80%;">Source: <a href="https://develop.kde.org/docs/getting-started/rust/">develop.kde.org/docs/getting-started/rust/</a></p>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2>Session at the end of the day</h2>
+  <img style="width: 90%;" src="img/session_kde_bindings.png"/>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">What about people that's</h2>
+  <h2 class="r-fit-text"><i class="red">unaware</i> of Qt?</h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
+  <h3>Python's case (from before)</h3>
+    <div id="left">
+      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+        #ifndef MAINWINDOW_H
+        #define MAINWINDOW_H
+
+        #include &lt;QMainWindow&gt;
+        #include &lt;QPushButton&gt;
+
+        class MainWindow : public QMainWindow
+        {
+            Q_OBJECT
+            public:
+                MainWindow(QWidget *parent = nullptr);
+            private slots:
+                void handleButton();
+            private:
+                QPushButton *m_button;
+        };
+
+        #endif // MAINWINDOW_H</code></pre>
+      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+        #include "mainwindow.h"
+
+        MainWindow::MainWindow(QWidget *parent)
+           : QMainWindow(parent)
+        {
+            m_button = new QPushButton("My Button", this);
+            connect(m_button, SIGNAL(clicked()), this,
+              SLOT(handleButton()));
+        }
+
+        void MainWindow::handleButton()
+        {
+            m_button-&gt;setText("Ready");
+        }</code></pre>
+      <pre style="font-size: 30%;"><code class="c++" data-trim data-noescape>
+        #include &lt;QApplication&gt;
+        #include "mainwindow.h"
+
+        int main(int argc, char *argv[])
+        {
+            QApplication app(argc, argv);
+            MainWindow mainWindow;
+            mainWindow.show();
+            return app.exec(d);
+        }</code></pre>
+    </div>
+    <div id="rightl">
+      <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+        import sys
+        from PySide6.QtCore import Slot
+        from PySide6.QtWidgets import (
+          QApplication, QMainWindow, QPushButton
+        )
+
+        class MainWindow(QMainWindow):
+            def __init__(self, parent=None):
+                QMainWindow.__init__(self, parent)
+                self.b = QPushButton("My Button", self)
+                self.b.clicked.connect(self.handle_button)
+
+            @Slot()
+            def handle_button(self):
+                self.b.setText("Ready")
+
+        if __name__ == "__main__":
+            app = QApplication(sys.argv)
+            mainWindow = MainWindow()
+            mainWindow.show()
+            sys.exit(app.exec())</code></pre>
+    </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
+  <h3>Python's case</h3>
+  <div id="left">
+  <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+    import sys
+    from PySide6.QtCore import Slot
+    from PySide6.QtWidgets import (
+      QApplication, QMainWindow, QPushButton
+    )
+
+    class MainWindow(QMainWindow):
+        def __init__(self, parent=None):
+            QMainWindow.__init__(self, parent)
+            self.b = QPushButton("My Button", self)
+            self.b.clicked.connect(self.handle_button)
+
+        @Slot()
+        def handle_button(self):
+            self.b.setText("Ready")
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        mainWindow = MainWindow()
+        mainWindow.show()
+        sys.exit(app.exec())</code></pre>
+  </div>
+  <div id="right">
+    <ul class="fragment" style="font-size: 80%;">
+      <li class="fragment">Inheriting from a Qt class</li>
+      <li class="fragment">Understand Qt-API</li>
+      <li class="fragment">Connecting a button with a Slot</li>
+      <li class="fragment">Decorating a method as a Slot</li>
+      <li class="fragment">Event loop</li>
+      <li class="fragment"><i class="qt-lemon">Writing a Qt application in Python from scratch</i></li>
+    </ul>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">This might feel</h2>
+  <h2 class="r-fit-text"><i class="red">not-natural</i> and <i class="qt-neon">extra work</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">We <i class="red">force</i> languages to</h2>
+  <h2 class="r-fit-text"><i class="qt-lemon">handle</i> Qt/C++ details</h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">How can we <i class="qt-neon">include</i> other languages</h2>
+  <h2 class="r-fit-text"><i class="qt-lemon">without breaking</i> the language paradigm?</h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <img style="width: 100%;" src="img/qtbridges_back.png"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2>The new approach</h2>
+  <img style="width: 90%;" src="img/qtbridges_diagram.png"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">Split <i class="qt-lemon">Backend</i> from <i class="qt-neon">UI</i>:</h2>
+  <h2 class="r-fit-text">Reduce Qt footprint from backend</h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Language independence</h2>
+  <img style="width: 90%;" src="img/qtbridges_diagram_2.png"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">Internal process</h2>
+  <ul>
+    <li><i class="qt-lemon"><code>QMetaObjectBuilder</code></i> -> Runtime generation of QML-types</li>
+    <ul style="font-size: 80%;">
+      <li>Methods, Signals, Slots, Properties, etc.</li>
+    </ul>
+    <li class="fragment"><i class="qt-lemon"><code>QQmlPrivate:qmlregister</code></i> for instantiable types (Still in progress)</li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">Implementation <i class="qt-lemon">"detail"</i></h2>
+  <p class="fragment">
+  Decorators, Macros, Observable types, etc
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">Package distribution</h2>
+  <p class="fragment">
+    Wheels (Python), Crates (Rust), NuGet (C#), ...
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">Development environment</h2>
+  <p class="fragment">
+    Different languages, different IDEs.
+  </p>
+</section>
+
+<section class="slide-red" data-transition="fade-in fade-out">
+  <h2>⚠️Please note</h2>
+  <p class="quote-neon fragment r-fit-text">
+    The target users are <i class="qt-lemon">non-Qt</i> developers.
+  </p>
+  <p class="quote-neon fragment r-fit-text">
+  Not everything in Qt will be possible in Qt bridges.
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtbridges_back_2.png">
+  <h2 class="r-fit-text">A sneak peak</h2>
+  <h2 class="r-fit-text">of one application</h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+<h2>Base QtQuick application</h2>
+<div id="left">
+<pre style="font-size: 20%;"><code class="js" data-trim data-noescape>
+pragma ComponentBehavior: Bound
+
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQml.Models
+import minimalapp
+
+ApplicationWindow {
+    id: root
+
+    Timer {
+        id: clearStatusTimer
+        interval: 1500
+        onTriggered: statusDisplay.text = ""
+    }
+
+    Connections {
+        target: Backend
+        function onDuplicateFound(duplicate) {
+            statusDisplay.text = `List already contains entry ${duplicate}!`
+            clearStatusTimer.restart();
+        }
+    }
+
+    width: 640
+    height: 480
+    visible: true
+    title: qsTr("Minimal QML app")
+    ColumnLayout {
+        id: mainLayout
+        anchors.fill: parent
+        ListView {
+            id: lv
+            model: Backend.list
+            delegate: Control {
+                id: ld
+                required property var model
+                required property int index
+                width: lv.width
+                implicitHeight: Math.max(textLabel.implicitHeight, deleteButton.implicitHeight)
+                RowLayout {
+                    anchors.fill: parent
+                    Label {
+                        property bool inEditMode: false
+                        id: textLabel
+                        text: inEditMode ? "" : `Item ${ld.index+1}: ${ld.model.edit}`
+                        Layout.fillWidth: true
+                        TextInput {
+                            id: editField
+                            visible: textLabel.inEditMode
+                            anchors.fill: parent
+                            onEditingFinished: {
+                                textLabel.inEditMode = false
+                            }
+                            onAccepted: {
+                                ld.model.edit = text
+                            }
+                        }
+                    }
+                    RoundButton {
+                        text: "✏️"
+                        down: textLabel.inEditMode || pressed
+                        onReleased: () => {
+                            if (textLabel.inEditMode) {
+                                textLabel.inEditMode = false
+                            } else {
+                                editField.text = `${ld.model.edit}`
+                                textLabel.inEditMode = true
+                                editField.forceActiveFocus()
+                                editField.selectAll()
+                            }
+                        }
+                    }
+                    RoundButton {
+                        id: deleteButton
+                        text: "🗑️" // could use icons if we could ensure we have them
+                        onReleased: () => { lv.model.removeRow(ld.index) }
+                    }
+                }
+            }
+            Layout.fillHeight: true
+            Layout.preferredWidth: mainLayout.width
+        }
+
+        RowLayout {
+            implicitHeight: Math.max(input.implicitHeight, submitButton.implicitHeight)
+            TextField {
+                id: input
+                placeholderText: "Enter string to add"
+
+                function submit() {
+                    Backend.addString(input.text)
+                    input.clear()
+                }
+
+                onAccepted: submit()
+                Layout.preferredWidth: mainLayout.width * 0.8
+            }
+            Button {
+                id: submitButton
+                text: "Add text"
+                enabled: input.text !== ""
+                onReleased: input.submit()
+            }
+        }
+    }
+
+    footer: Text {
+        id: statusDisplay
+    }
+}
+</code></pre>
+</div>
+<div id="right">
+  <img src="img/minimal_app.png" />
+</div>
+</section>
+
+<!-- C# -->
+<section class="slide-purple" data-transition="fade-in fade-out">
+  <img style="width: 50%;"src="img/logo_csharp.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_csharp.png">
+  <h2>Why C# (1/2)</h2>
+  <div id="left">
+    <pre style="font-size: 36%;"><code class="c#" data-trim data-noescape>
+using System;
+
+class Program
+{
+  static int AddNumbers(int num1, int num2)
+  {
+    return num1 + num2;
+  }
+
+  static void Main(string[] args)
+  {
+    int result = AddNumbers(40, 2);
+    Console.WriteLine($"The sum is {result}");
+  }
+}
+    </code></pre>
+  </div>
+  <div id="right">
+    <ul style="font-size: 60%;">
+      <li>OOP</li>
+      <li>Type safety and strong typing</li>
+      <li>Memory management (GC)</li>
+      <li>Platform Independence (Windows, macOS and Linux)</li>
+      <li>Rich Standard Library *Base Class Library)</li>
+      <li>Language Integrated Query (LINQ)</li>
+      <li>Async/await, Generics, Lambda expressions, etc</li>
+    </ul>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_csharp.png">
+  <h2>Why C#? (2/2)</h2>
+  <ul>
+    <li>Default language for Windows development</li>
+    <li>Previous effort <a href="https://code.qt.io/cgit/qt-labs/qtdotnet">code.qt.io/cgit/qt-labs/qtdotnet</a></li>
+    <li>.NET ecosystem</li>
+    <li>Tooling</li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_csharp.png">
+  <h3>Qt Bridges (C#) - Minimal application</h3>
+  <div id="left">
+    <pre style="font-size: 20%;"><code class="c#" data-trim data-noescape>
+// Backend
+using Qt.Quick;
+
+namespace Qt.DotNet.QmlNext.MinimalApp
+{
+  [QmlElement(Singleton = true)]
+  public class Backend
+  {
+    public UniqueStringListModel List { get; } = new();
+
+    public Backend()
+    {
+        List.DuplicateFound += OnDuplicateFound;
+    }
+
+    public bool AddString(string newValue)
+    {
+        return List.AddString(newValue);
+    }
+
+    public delegate void DuplicateFoundHandler(object sender,
+      DuplicateFoundArgs args);
+    public event DuplicateFoundHandler DuplicateFound;
+
+    private void OnDuplicateFound(object sender,
+      DuplicateFoundArgs args)
+    {
+        DuplicateFound?.Invoke(this, args);
+    }
+  }
+
+  public class DuplicateFoundArgs : EventArgs
+  {
+    public string Value { get; set; }
+    public override string ToString()
+    {
+        return Value;
+    }
+  }
+}
+    </code></pre>
+  </div>
+  <div id="right">
+    <pre style="font-size: 30%;"><code class="c#" data-trim data-noescape>
+    // Main
+    using Qt.Quick;
+
+    namespace Qt.DotNet.QmlNext.MinimalApp
+    {
+        public class Program
+        {
+            public static void Main(string[] args)
+            {
+                Qml.LoadFromModule("Main");
+                Qml.WaitForExit();
+            }
+        }
+    }
+    </code></pre>
+  </div>
+</section>
+
+<section data-background-video="videos/bridges_csharp_short.mp4"
+          data-background-video-loop data-background-video-muted>
+</section>
+
+<!-- Swift -->
+<section class="slide-orange" data-transition="fade-in fade-out">
+  <img style="width: 50%;"src="img/logo_swift.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_swift.png">
+  <h2>Why Swift? (1/2)</h2>
+<div id="left">
+  <pre style="font-size: 33%;"><code class="swift" data-trim data-noescape>
+import Foundation
+
+func addNumbers(_ num1: Int, _ num2: Int) -> Int {
+  return num1 + num2
+}
+
+func main() {
+  let result = addNumbers(40, 2)
+
+  print("The sum is: \(result)")
+}
+
+main()
+  </code></pre>
+</div>
+<div id="left">
+  <ul style="font-size: 60%;">
+    <li>Safety and Performance</li>
+    <li>Modern syntax</li>
+    <li>Type Safety and type inference</li>
+    <li>Optionals</li>
+    <li>Memory management (Automatic Reference Counting, ARC)</li>
+    <li>Functional programming</li>
+    <li>Protocol-Oriented Programming</li>
+    <li>Interoperability with Objective-C</li>
+    <li>Generics, Pattern matching, etc</li>
+  </ul>
+</div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_swift.png">
+  <h2>Why Swift? (2/2)</h2>
+  <ul>
+    <li>It's the default language for macOS development</li>
+    <li>Previous effort on binding it for Qt Quick apps</li>
+    <li>Efforts to bring it to Linux and Windows</li>
+  </ul>
+</section>
+
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_swift.png">
+<h3>Qt Bridges (Swift) - Minimal application</h3>
+<div id="left">
+  <pre style="font-size: 28%;"><code class="swift" data-trim data-noescape>
+@QtBridgeable
+public class ListModel {
+  @Published var list: [String] = ["test string"]
+  @Published var duplicateStringFound : String = ""
+
+  public func editString(index: Int, newString: String) {
+    if list.contains(newString) {
+        postDuplicateNotification(with: newString)
+    } else {
+        list[index] = newString
+    }
+  }
+
+  public func addString(newString: String) {
+    if list.contains(newString) {
+        postDuplicateNotification(with: newString)
+    } else {
+        list.append(newString)
+    }
+  }
+
+  public func removeString(index: Int) {
+    list.remove(at: index)
+  }
+
+  private func postDuplicateNotification(with duplicateString: String) {
+    duplicateStringFound = duplicateString
+  }
+}
+  </code></pre>
+</div>
+<div id="left">
+  <pre style="font-size: 30%;"><code class="swift" data-trim data-noescape>
+var app = QApp()
+
+var model = ListModel()
+app.addInitialProperty(name: "listModel", model: model)
+
+let qmlPath = Bundle.module.url(forResource: "main",
+                withExtension: "qml")!.path
+app.setRootQml(path: qmlPath)
+
+app.run(argc: CommandLine.argc,
+        argv: CommandLine.unsafeArgv)
+
+  </code></pre>
+</div>
+</section>
+
+<section data-background-video="videos/bridges_swift_short.mp4"
+          data-background-video-loop data-background-video-muted>
+</section>
+
+<!-- Java -->
+<section class="slide-blue" data-transition="fade-in fade-out">
+  <img style="width: 20%;"src="img/logo_java.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_java.png">
+  <h2>Why Java? (1/2)</h2>
+  <div id="left">
+  <pre style="font-size: 30%;"><code class="java" data-trim data-noescape>
+public class Program {
+
+  public static int addNumbers(int num1, int num2) {
+    return num1 + num2;
+  }
+
+  public static void main(String[] args) {
+    int result = addNumbers(40, 2);
+
+    System.out.println("The sum is " + result);
+  }
+}
+  </code></pre>
+  </div>
+  <div id="right">
+  <ul style="font-size: 80%;">
+    <li>Platform Independence</li>
+    <li>OOP</li>
+    <li>Automatic Memory Management (GC)</li>
+    <li>Strong Type System</li>
+    <li>Security (management and bytecode verification)</li>
+    <li>Multithreading, Rich Standard Library, Large ecosystem</li>
+  </ul>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_java.png">
+  <h2>Why Java? (2/2)</h2>
+  <ul>
+    <li>Already in the ecosystem (Android)</li>
+    <li>Automotive experience</li>
+    <li>Code generator (<a href="https://doc.qt.io/qt-6/qtjenny.html">Qt Jenny</a>)</li>
+    <li>Active 3rd party bindings (<a href="https://www.qtjambi.io/">Qt Jambi</a>)</li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_java.png">
+<h3>Qt Bridges (Java) - Minimal application</h3>
+<div id="left">
+  <pre style="font-size: 27%;"><code class="java" data-trim data-noescape>
+package org.qt.bridge;
+
+import org.qt.bridge.core.QtObject;
+import org.qt.bridge.core.QtState;
+import org.qt.bridge.core.QtStateModelList;
+
+@QMLRegistrable(name = "Backend")
+public class ViewModel extends QtObject {
+
+  @BindConnection
+  QCallback qtCallback;
+
+  private final Repository db = new Repository();
+  private final QtState&lt;Integer&gt; size = new QtState&lt;&gt;(this,0);
+  private final QtStateModelList&lt;String&gt; list = new \
+        QtStateModelList&lt;&gt;(db.fetchAll());
+  {
+    list.observe(item -> size.update(item.size()));
+  }
+
+  public void addString(String item) {
+    if (item.isBlank()) {
+      if (qtCallback != null) {
+        qtCallback.blankFound();
+      }
+      return;
+    }
+    if (list.contains(item)) {
+      if (qtCallback != null) {
+        qtCallback.duplicateFound(item);
+      }
+      return;
+    }
+    list.addState(item);
+  }
+
+  public void update(int index, String updatedValue) {
+    if (list.contains(updatedValue)) {
+      if (qtCallback != null) {
+        qtCallback.duplicateFound(updatedValue);
+      }
+      return;
+    }
+    list.updateStateAt(index, updatedValue);
+  }
+
+  public void remove(int index) {
+    list.removeStateAt(index);
+    if (qtCallback != null) {
+      qtCallback.erased();
+    }
+  }
+}
+  </code></pre>
+</div>
+<div id="right">
+  <pre style="font-size: 25%;"><code class="java" data-trim data-noescape>
+package org.qt.bridge;
+
+import org.qt.bridge.app.QtQuickApplication;
+
+public class Main {
+
+    public static void main(String[] args) {
+        final QtQuickApplication app = new QtQuickApplication(args);
+        app.registerQmlSingleton(new ViewModel());
+        app.execute();
+    }
+}
+  </code></pre>
+</div>
+</section>
+
+<section data-background-video="videos/bridges_java_short.mp4"
+          data-background-video-loop data-background-video-muted>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2>Interoperability with Kotlin</h2>
+</section>
+
+<!-- Python -->
+<section class="slide-blue" data-transition="fade-in fade-out">
+  <img style="width: 40%;"src="img/logo_python.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
+  <h2>Why Python? (1/2)</h2>
+  <div id="left">
+  <pre style="font-size: 40%;"><code class="python" data-trim data-noescape>
+def add_numbers(a: int, b: int) -> int:
+  return a + b
+
+
+def main():
+  result = add_numbers(40, 2)
+  print(f"The sum is {result}")
+
+
+if __name__ == "__main__":
+  main()
+  </code></pre>
+  </div>
+  <div id="right">
+  <ul style="font-size: 80%;">
+    <li>OOP</li>
+    <li>Simple and readable syntax</li>
+    <li>Dynamic typing</li>
+    <li>High level language</li>
+    <li>Extensive standard library</li>
+    <li>Huge ecosystem</li>
+    <li>Versatility, rapid development and educational value</li>
+  </ul>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
+  <h2>Why Python? (2/2)</h2>
+  <ul>
+    <li>Previous experience with Qt for Python (<a href="https://doc.qt.io/qtforpython">PySide</a>)</li>
+    <li>Python remains the most popular language</li>
+    <li>Interoperability with many technologies</li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_python.png">
+<h3>Qt Bridges (Python) - Minimal application</h3>
+<div id="left">
+  <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+import sys
+from PySide6.QtGui import QGuiApplication
+from PySide6.QtQml import QQmlApplicationEngine
+from QtBridges import AutoQmlBridge, updateQML
+
+class StringModel:
+  def __init__(self):
+    self._items = ["Apple", "Banana"]
+
+  @updateQML
+  def add_string(self, value: str):
+    if value in self._items:
+      print(f"Duplicate found: {value}")
+      return False
+    self._items.append(value)
+    return True
+
+  def delete_string(self, value: str):
+    if value in self._items:
+      self._items.remove(value)
+      print(f"Deleted item: {value}")
+      print(self._items)
+      return True
+    return False
+
+  def set_item(self, index: int, value: str):
+    if 0 <= index < len(self._items):
+      self._items[index] = value
+      print(f"Item at index {index} set to {value}")
+      print(self._items)
+      return True
+    return False
+
+  @property
+  def items(self) -> list[str]:
+    return self._items
+
+  def data(self) -> list[str]:
+    return self._items
+  </code></pre>
+</div>
+<div id="right">
+  <pre style="font-size: 30%;"><code class="python" data-trim data-noescape>
+if __name__ == "__main__":
+    app = QGuiApplication(sys.argv)
+    engine = QQmlApplicationEngine()
+
+    # Register with QML
+    string_model = StringModel()
+    AutoQmlBridge(string_model, data_type="List")
+
+    engine.addImportPath(sys.path[0])
+    engine.loadFromModule(".", "Main")
+
+    if not engine.rootObjects():
+        sys.exit(-1)
+
+    sys.exit(app.exec())
+  </code></pre>
+</div>
+</section>
+
+<section data-background-video="videos/bridges_python_short.mp4"
+          data-background-video-loop data-background-video-muted>
+</section>
+
+<!-- rust -->
+<section class="slide-red" data-transition="fade-in fade-out">
+  <img style="width: 40%;"src="img/logo_rust.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
+  <h2>Why Rust? (1/2)</h2>
+  <div id="left">
+  <pre style="font-size: 30%;"><code class="rust" data-trim data-noescape>
+fn add_numbers(num1: i32, num2: i32) -> i32 {
+    num1 + num2
+}
+
+fn main() {
+  let result = add_numbers(40, 2);
+
+  println!("The sum is: {}", result);
+}
+  </code></pre>
+  </div>
+  <div id="right">
+    <ul style="font-size: 80%;">
+      <li>Memory safety without GC</li>
+      <li>Ownership system</li>
+      <li>Zero-cost abstractions</li>
+      <li>Concurrency safety</li>
+      <li>Performance</li>
+      <li>Strong type system</li>
+      <li>Cargo</li>
+      <li>Community and ecosystem</li>
+      <li>Functional programming, pattern matching, trait system, etc</li>
     </ul>
   </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
-  <h3>Rust - Highlights</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">Memory management (Ownership &amp; Borrowing)</li>
-    <li class="fragment">Tooling (<i class="qt-lemon"><code>cargo</code></i>)</li>
-    <li class="fragment">Growing ecosystem</li>
-    <li class="fragment"><i class="qt-lemon">Still evolving</i></li>
-  </ul>
-  </div>
-  <div id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cWSh4ZxAr7E?si=RnuxycVrDyThS85g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p style="font-size: 60%;">
-       Rust Features that I Want in C++ - David Sankel - CppNow 2022
-    </p>
-  </div>
+<h2>Why Rust? (2/2)</h2>
+<ul>
+  <li>Previoys experience (qtmetaobject-rs, CXX-Qt, etc)</li>
+  <li>Language popularity</li>
+  <li>Ecosystem</li>
+  <li>Tooling</li>
+</ul>
 </section>
 
+<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
+<h3>Qt Bridges (Rust) - Minimal application</h3>
+<div id="left">
+  <pre style="font-size: 30%;width: 100%;"><code class="rust" data-trim data-noescape>
+use qt_gen::qobject_impl;
+use qt_type_lib::{QVariant, QStringList,
+                  QModelIndex, QSignalBlocker};
 
-<section class="slide-black" data-transition="fade-in fade-out">
-  <img style="width: 50%;"src="img/zig_logo.svg"/>
-</section>
+#[derive(Default)]
+pub struct Backend {
+}
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig</h3>
-  <div id="left">
-    <ul style="font-size: 80%;">
-      <li class="fragment">No hidden control flow, nor memory alloc</li>
-      <li class="fragment">No preprocessor, no macros</li>
-      <li class="fragment">Metaprogramming: compile-time code execution and lazy evaluation (<code><i class="qt-lemon">comptime</i></code>)</li>
-    </ul>
-  </div>
-  <div id="right">
-    <pre style="font-size: 34%;width: 90%;"><code class="zig" data-trim data-noescape>
-    // main.zig
-    const std = @import("std");
-
-    pub fn main() !void {
-      const stdout = std.io.getStdOut().writer();
-      try stdout.print("Hello, {s}!\n", .{"world"});
-    }
-    </code></pre>
-    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
-    $ zig build-exe main.zig
-    $ ./hello
-    Hello, world!
-    </code></pre>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig and C++</h3>
-  <div id="left">
-    <pre style="font-size: 38%;width: 90%;"><code class="cpp" data-trim data-noescape>
-    #include &lt;iostream&gt;
-    using namespace std;
-    class Rectangle {
-      public:
-        float x;
-        float y;
-        Rectangle(float x, float y) :
-          x(x), y(y) {}
-
-        float area() {
-            return x * y;
-        }
-    };
-    int main(int argc, char *argv[]) {
-        Rectangle r = Rectangle(2.2, 3.3);
-        cout &lt;&lt; "Rectangle area: "
-             &lt;&lt; r.area();
-        return 0;
-    }
-    </code></pre>
-  </div>
-  <div id="right">
-    <pre style="font-size: 38%;width: 95%;"><code class="zig" data-trim data-noescape>
-    const std = @import("std");
-    const Rectangle = struct {
-      x: f32,
-      y: f32,
-      pub fn init(x: f32, y: f32) Rectangle {
-        return Rectangle{
-          .x = x, .y = y,
-        };
+#[qobject_impl(Base = QStringListModel)]
+impl Backend {
+  #[overridden]
+  fn set_data(&mut self, index: &QModelIndex,
+      value: &QVariant, role: i32) -> bool {
+    if let Ok(value_str) = String::try_from(value) {
+      if self.string_list().contains(&value_str) {
+        self.duplicate_found(&value_str);
+        return false;
       }
-      pub fn area(self: Rectangle) f32 {
-          return self.x * self.y;
-      }
-    };
-    pub fn main() !void {
-      const r = Rectangle.init(2.2, 3.3);
-      const stdout = std.io.getStdOut().writer();
-      try stdout.print("Rectangle area: {}\n",
-        .{r.area()});
     }
-    </code></pre>
-  </div>
+
+    self.base_set_data(index, value, role)
+  }
+
+  #[qslot]
+  fn add_string(&mut self, value: &str) {
+    if self.string_list().contains(&value) {
+      self.duplicate_found(&value);
+    }
+    else {
+      self.append_prechecked_string(value);
+    }
+  }
+
+  fn append_prechecked_string(&mut self, new_value: &str) {
+    let current_count = self.row_count(&QModelIndex::default());
+    self.begin_insert_rows(&QModelIndex::default(),
+      current_count, current_count);
+    {
+      let _signal_blocker = QSignalBlocker::new(
+        &lt;Self as bridge::QObjectProxy&gt;::get_qobject(self));
+      let mut new_list = self.string_list();
+      new_list.append(new_value);
+      // decrements refcount of list
+      self.set_string_list(&QStringList::default());
+      self.set_string_list(&new_list);
+    }
+    self.end_insert_rows();
+  }
+
+  #[qsignal]
+  fn duplicate_found(&self, duplicate: &str);
+}
+
+  </code></pre>
+</div>
+<div id="right">
+  <pre style="font-size: 22%;"><code class="rust" data-trim data-noescape>
+use bridge::QObjectHolder;
+use qt_type_lib::{QGuiApplication, QQmlApplicationEngine, QVariantMap};
+
+mod backend;
+use backend::Backend;
+
+fn main() {
+
+  let mut backend = QObjectHolder::new(Backend::default());
+
+  let _app = QGuiApplication::new();
+  let mut qml_engine = QQmlApplicationEngine::new();
+
+  let mut properties = QVariantMap::default();
+  properties.insert("backend", &backend.as_qobject_mut().into());
+  qml_engine.pin_mut().set_initial_properties(&properties);
+
+  let main_qml = include_bytes!("Main.qml");
+  qml_engine.pin_mut().load_data(main_qml);
+
+  QGuiApplication::exec();
+}
+  </code></pre>
+</div>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Highlights</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">Faster and safer than C (*)</li>
-    <li class="fragment">Integration with C-libraries without FFI/bindings</li>
-    <li class="fragment">Built-in testing framework</li>
-    <li class="fragment"><code>comptime</code> keyword</li>
-    <li class="fragment">Out of the box cross compilation</li>
-  </ul>
-  </div>
-  <div id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YXrb-DqsBNU?si=iV59s_a-Xw5Tgp8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p style="font-size: 40%;"> Intro to the Zig Programming Language • Andrew Kelley • GOTO 2022 </p>
-  </div>
+<section data-background-video="videos/bridges_rust_short.mp4"
+          data-background-video-loop data-background-video-muted>
 </section>
 
-<section class="slide-gray" data-transition="fade-in fade-out">
-  <img style="width: 40%;"src="img/carbon_logo.png"/>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_carbon.png">
-  <h3>Carbon</h3>
-  <div id="left">
-    <ul style="font-size: 80%;">
-      <li class="fragment"><i class="qt-lemon">In development</i></li>
-      <li class="fragment">Succesor approach</li>
-      <li class="fragment">Interoperability (C++ ⇄ Carbon)</li>
-      <li class="fragment">Modern Generic system</li>
-      <li class="fragment">Safety strategy (Migration plan)</li>
-    </ul>
-  </div>
-  <div id="right">
-    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
-    package hello api;
-
-    fn Main() -&gt; i32 {
-      var s: auto = "Hello, world!";
-      Print(s);
-      return 0;
-    }
-    </code></pre>
-    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
-    $ ./explorer hello.carbon
-    Hello, world!
-    </code></pre>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_carbon.png">
-  <h3>Carbon and C++</h3>
-  <div id="left">
-    <pre style="font-size: 30%;width: 90%;"><code class="cpp" data-trim data-noescape>
-    // C++
-    #include &lt;math.h&gt;
-    #include &lt;iostream&gt;
-    #include &lt;span&gt;
-    #include &lt;vector&gt;
-
-    struct Circle {
-      float r;
-    }
-
-    void PrintTotalArea(std::span<Circle> circles) {
-      float area = 0;
-      for (const Circle&amp; c: circles) {
-        area += M_PI * c.r * c.r;
-      }
-      std::cout &lt;&lt; "Total area: " &lt;&lt; area &lt;&lt; "\n";
-    }
-
-    auto main(int argc, char** argv) -&gt; int {
-      std::vector<Circle> circles = {{1.0}, {2.0}};
-      // Implicitly converts `vector` to `span`
-      PrintTotalArea(circles);
-      return 0;
-    }
-    </code></pre>
-  </div>
-  <div id="left">
-    <pre style="font-size: 30%;width: 95%;"><code class="cpp" data-trim data-noescape>
-    // Carbon
-    package Geometry api;
-
-    import Math;
-
-    class Circle {
-      var r: f32;
-    }
-
-    fn PrintTotalArea(circles: Slice(Circle)) {
-      var area: f32 = 0;
-      for (c: Circle in circles) {
-        area += Math.Pi * c.r * c.r;
-      }
-      Print("Total area: {0}", area);
-    }
-
-    fn Main() -&gt; i32 {
-      // A dynamically sized array, like `std::vector`.
-      var circles: Array(Circle) = ({.r = 1.0}, {.r = 2.0});
-      // Implicitly converts `Array` to `Slice`
-      PrintTotalArea(circles);
-      return 0;
-    }
-    </code></pre>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_carbon.png">
-  <h3>Carbon - Highlights</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">Simpler syntax</li>
-    <li class="fragment">Safer/modern C++ succesor</li>
-    <li class="fragment">Safety: only way to radically change the std library</li>
-    <li class="fragment">Still experimental</li>
-  </ul>
-  </div>
-  <div id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZTJ9omXOQ0?si=AHZxwXWo_OCuR-L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p style="font-size: 40%;">Carbon Language Successor Strategy: From C++ Interop to Memory Safety - Chandler Carruth - CppNow 23 </p>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back3.png">
-  <h3>Many other languages to check</h3>
-  <ul>
-    <li>cppfront - <a href="https://github.com/hsutter/cppfront">github.com/hsutter/cppfront</a></li>
-    <li>Circle - <a href="https://www.circle-lang.org">circle-lang.org</a></li>
-    <li>Nim - <a href="https://nim-lang.org">nim-lang.org</a></li>
-    <li>Crystal - <a href="https://crystal-lang.org/">crystal-lang.org</a></li>
-    <li>...and many more!</li>
-  </ul>
+<!-- other langs -->
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Brief FAQ</h2>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">How should <i class="qt-neon">Qt</i></h2>
-  <h2 class="r-fit-text">look like in the <i class="qt-neon">future</i></h2>
+  <h2 class="r-fit-text">What about <i class="qt-lemon">&lt;lang&gt;</i>?😠</h2>
+  <p class="quote-green fragment">
+  One of the goals is to enable people to add more bridges
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-auto-animate data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
+  <img data-id="lang1" data-auto-animate-delay="0.0" style="margin: 40px; width: 250px;" src="img/logo_go.svg" />
+  <img data-id="lang2" data-auto-animate-delay="0.2" style="margin: 40px; width: 130px;" src="img/logo_nim.svg" />
+  <img data-id="lang3" data-auto-animate-delay="0.4" style="margin: 40px; width: 200px;" src="img/logo_php.svg" />
+  <img data-id="lang4" data-auto-animate-delay="0.6" style="margin: 40px; width: 160px;" src="img/logo_julia.svg" />
+  <img data-id="lang5" data-auto-animate-delay="0.8" style="margin: 40px; width: 120px;" src="img/logo_typescript.svg" />
+  <img data-id="lang6" data-auto-animate-delay="1.0" style="margin: 40px; width: 130px;" src="img/logo_carbon.png" />
+  <img data-id="lang7" data-auto-animate-delay="1.2" style="margin: 40px; width: 130px;" src="img/logo_lua.svg" />
+  <img data-id="lang8" data-auto-animate-delay="1.4" style="margin: 40px; width: 130px;" src="img/logo_gleam.svg" />
+  <img data-id="lang9" data-auto-animate-delay="1.6" style="margin: 40px; width: 220px;" src="img/logo_elixir.svg" />
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Imagine a framework</h3>
-  <ul>
-    <li class="fragment">✅ Memory safe</li>
-    <li class="fragment">✅ Easy to test</li>
-    <li class="fragment">✅ Straightforward syntax</li>
-    <li class="fragment">✅ Modern Generics</li>
-    <li class="fragment">✅ Backward compatible</li>
-  </ul>
-  <p class="fragment">🤯</p>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <div id="left">
-  <h2>What can <i class="qt-neon">we</i> (*) do?</h2>
-  <p style="margin-top: 20%; font-size: 80%;">(*) Qt Project members</p>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h3>Languages</h3>
-  <p class="quote-green">
-    Be aware of other languages, no need to be an expert.
+  <h2 class="r-fit-text">What about <i class="qt-lemon">&lt;feature&gt;</i>?🤔</h2>
+  <p class="quote-green fragment">
+  It can be that some <i class="qt-lemon">features</i> will not be considered.
+  Remember the scope!
   </p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>API Design</h3>
-  <p class="quote-green">
-    Keep in mind other languages when new API is being
-    written down (or updated).
+  <h2 class="r-fit-text">What if I need <i class="qt-lemon">more</i>?😢</h2>
+  <p class="quote-green fragment">
+  If Qt Bridges is not enough, developers will be pointed to any current binding
+  or C++.
+  </p>
+</section>
+
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">So no more <i class="qt-lemon">bindings</i>?💀</h2>
+  <p class="quote-green fragment">
+  The development of binding is still on-going!
   </p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Documentation</h3>
-  <p class="quote-green">
-    Try to add a general explanation of the method/class/module then
-    a more language specific one.
+  <h2 class="r-fit-text">Why it's only <i class="qt-lemon">QtQuick</i>?😒</h2>
+  <p class="quote-green fragment">
+  QtQuick is a more modern and attractive way of creating UI.
   </p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Tooling</h3>
-  <p class="quote-green">
-    Get inspired by what's out there. Innovation is not always necessary.
+  <h2 class="r-fit-text">Will you support <i class="qt-lemon">everything</i> in QML?🤨</h2>
+  <p class="quote-green fragment">
+  Not at the moment, it depends on the adoption and scope.
   </p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Outreach</h3>
-  <p class="quote-green">
-    Spreading the knowledge should be priority 1,
-    and making everything accesible priority 2.
+  <h2 class="r-fit-text">Can I combine <i class="qt-lemon">all the languages</i>?🧪</h2>
+  <p class="quote-green fragment">
+  Not for TP, but backend interchangable
   </p>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <div id="left">
-  <h2>What does it mean to have <i class="qt-lemon">more languages</i> in Qt?</h2>
-  </div>
+  <h2 class="r-fit-text">Do you want to brainwash <i class="qt-lemon">C++ developers</i>?😵‍💫</h2>
+  <p class="quote-green fragment">
+  <strike>Yes</strike> No
+  </p>
+</section>
+
+<!-- end -->
+
+<section data-transition="fade-in fade-out">
+  <h2>Release a TP this year*</h2>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">More languages means</h2>
-  <h2 class="r-fit-text"><i class="qt-violet">more communities</i></h2>
+  <h2 class="r-fit-text">To summarize...</h2>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">More languages means</h2>
-  <h2 class="r-fit-text"><i class="qt-lemon">more experience</i></h2>
+  <h2>What does it mean to have <i class="qt-lemon">more languages</i> with <span style="text-decoration-line:underline">Qt Bridges</span>?</h2>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2 class="r-fit-text">More languages means</h2>
-  <h2 class="r-fit-text">a <i class="qt-neon">better</i> Qt</h2>
+  <h2 class="r-fit-text">Qt Bridges means</h2>
+  <h2 class="r-fit-text"><i class="qt-lemon">more communities</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Qt Bridges means</h2>
+  <h2 class="r-fit-text"><i class="qt-violet">new ideas</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Qt Bridges means</h2>
+  <h2 class="r-fit-text"><i class="qt-lemon">new expertise</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h2 class="r-fit-text">Qt Bridges means</h2>
+  <h2 class="r-fit-text">a <i class="qt-neon">better</i> Qt ecosystem</h2>
 </section>
 
 <section data-background-image="img/worlddomination.png" data-background-opacity=1>
@@ -868,7 +1545,7 @@
   <h2 class="r-fit-text"><i class="qt-neon">everywhere</i></h2>
 </section>
 
-<section data-transition="fade-in fade-out">
+<section data-background-image="img/qtstars_back.png">
   <div id="left">
     <h1 style="font-size: 400%;"><i class="qt-neon">Q&A</i></h1>
     <h4>The Role of new Languages <span style="font-weight: normal;">in the Future of the Qt Ecosystem.</span></h4>
@@ -876,10 +1553,10 @@
     <p class="x80" style="font-size: 80%;">
       Dr. <i class="qt-lemon">Cristián</i> Maureira-Fredes<br>
       <span class="qt-neon">@cmaureir</span><br/>
+      <img class="clean-img" src="img/bluesky.png">
       <img class="clean-img" src="img/mastodon.png">
       <img class="clean-img" src="img/github_white.png">
       <img class="clean-img" src="img/linkedin.png">
-      <img class="clean-img" src="img/twitter.png">
     </p>
   </div>
   <div id="rightl">
@@ -913,7 +1590,7 @@
   <div id="hidden" style="display:none;">
     <div id="header">
       <div id="header-left" style="margin-top: 10px; margin-left: 20px;">
-          <img style="width: 100px; margin:0;padding:0;" src="img/akademy_logo.svg" />
+          <img style="width: 150px;margin:0;margin-top:30px;margin-left:30px;padding:0;" src="img/akademy_logo.svg" />
       </div>
       <div id="header-right"></div>
       <div id="footer-left">
